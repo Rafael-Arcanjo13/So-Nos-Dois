@@ -9,13 +9,44 @@
 </head>
 <body>
     <main>
-        <section>
-            <div>
+        <section id="images_section">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
 
+                    <div class="slide first">
+                        <img src="images/IMG-20250301-WA0081.jpg" alt="Eu, você e a Ymir">
+                    </div>
+                    <div class="slide">
+                        <img src="images/IMG-20250306-WA0084.jpg" alt="Só nós dois">
+                    </div>
+                    <div class="slide">
+                        <img src="images/IMG-20250119-WA0057.jpg" alt="Um ano de nós">
+                    </div>
+                    <div class="slide">
+                        <img src="images/IMG-20250318-WA0021.jpg" alt="No shopping">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
             </div>
             <div>
-                <p>Eu te amo absolutamente S2</p>
-                <span id="TempoJunto"></span>
+                
             </div>
         </section>
 
@@ -23,5 +54,7 @@
 
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
