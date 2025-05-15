@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 } 
 
 .main {
@@ -15,6 +16,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .slider {
@@ -118,4 +121,16 @@ body {
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
     background-color: #fff;
+}
+
+.timer-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempo-juntos {
+    color: white;
 }
