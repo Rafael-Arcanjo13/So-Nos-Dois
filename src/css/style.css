@@ -54,6 +54,26 @@ body {
     display: block;
 }
 
+
+@media (max-width: 480px) {
+    .slider {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .slide img {
+        max-width: 100%;
+    }
+
+    .text-container h1 {
+        font-size: 1.4rem;
+    }
+
+    .text-container p {
+        font-size: 0.95rem;
+    }
+}
+
 .manual-navigation {
     display: flex;
     justify-content: center;
