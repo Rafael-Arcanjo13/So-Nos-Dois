@@ -24,12 +24,12 @@ function nextImage() {
     document.getElementById("radio" + count).checked = true;
 }
 
-// Reinicia o timer quando o usuário clica manualmente nos botões
-document.querySelectorAll(".manual-btn").forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-        count = index + 1; // Atualiza a contagem com base no botão clicado
-        clearInterval(interval); // Para o antigo
-        interval = setInterval(nextImage, 5000); // Inicia novo
+// Atualiza o contador corretamente quando qualquer radio for marcado manualmente
+document.querySelectorAll('input[name="radio-btn"]').forEach((radio, index) => {
+    radio.addEventListener("change", () => {
+        count = index + 1;
+        clearInterval(interval);
+        interval = setInterval(nextImage, 5000);
     });
 });
 
